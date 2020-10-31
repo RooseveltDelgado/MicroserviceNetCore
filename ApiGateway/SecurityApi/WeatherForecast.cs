@@ -1,6 +1,6 @@
 using System;
 
-namespace ProductApi
+namespace SecurityApi
 {
     public class WeatherForecast
     {

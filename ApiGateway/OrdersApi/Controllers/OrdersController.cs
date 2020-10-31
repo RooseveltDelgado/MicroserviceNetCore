@@ -15,9 +15,8 @@ namespace OrdersApi.Controllers
         [HttpGet]
         public IActionResult  GetOrders()
         {
-            var o1 = new Order("ID1",200,"PROD 01");
-            var o2 = new Order("ID2",400, "PROD 02");
-            return Ok(new List<Order>{o1,o2});
+           
+            return Ok("");
         }
     }
 

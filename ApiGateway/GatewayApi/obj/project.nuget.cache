@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YKchzpgDU0dqe0BqwYS5ShwtMHNo1mbJWwVs52Olodp8v7K9KZNZtT2y78633i9T1cfsWBqSEs2EZn4m4ORXyg==",
+  "dgSpecHash": "G+s0AdjHzae5OYOXCTN1PMyxzQJVO0e9ppcs7hyZf+VrpoPswlwHKjvxV7AeYJvMUL2TaIjvBO+gQD4+Z4vEdg==",
   "success": true,
   "projectFilePath": "D:\\PRO_NetCore\\Microservicio\\ApiGateway\\GatewayApi\\GatewayApi.csproj",
   "expectedPackageFiles": [

@@ -1,14 +1,20 @@
 dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.9
 dotnet add package Microsoft.EntityFrameworkCore.Tools.DotNet --version 2.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 3.1.9
 dotnet add package Microsoft.NETCore.App --version 2.2.8
+
+
 
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL --version 3.1.4
 dotnet add package Npgsql.EntityFrameworkCore.PostgreSQL.Design --version 2.0.0-preview1
 
 dotnet tool install --global dotnet-ef
+dotnet tool update --global dotnet-ef
 
-dotnet ef dbcontext scaffold "Host=localhost;Database=XXXXX;Username=postgres;Password=XXXXXX" Npgsql.EntityFrameworkCore.PostgreSQL -o Models
-
+dotnet ef dbcontext scaffold "Host=localhost;Database=dbventas;Username=postgres;Password=luis123" Npgsql.EntityFrameworkCore.PostgreSQL -o Models
+dotnet ef migrations add Initialize
+dotnet ef migrations add InitialCreate
+dotnet ef database update
 
 ===========Sql Server===============================================
 dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design
@@ -17,6 +23,9 @@ dotnet tool install --global dotnet-aspnet-codegenerator
 dotnet tool update -g Dotnet-aspnet-codegenerator
 dotnet aspnet-codegenerator controller -name TodoItemsController -async -api -m TodoItem -dc TodoContext -outDir Controllers
 =============================================================================================================================
+
+=================adjuntar proyectos en sln========================================000000
+dotnet sln D://PRO_NetCore/Microservicio/ApiGateway/ApiGateway.sln add D://PRO_NetCore/Microservicio/ApiGateway/ClientApi/ClientApi.csproj
 
 Extensiones
 ============
@@ -31,35 +40,6 @@ https://stackoverflow.com/questions/57066856/dotnet-ef-not-found-in-net-core-3
 https://www.luisbeltran.mx/2018/10/08/creando-un-webapi-con-asp-net-core-entity-framework-core-automapper-y-publicacion-en-iis/
 
 
-[Route("api/[controller]")]
-public class CustomerController : Controller
-{
-    [HttpGet]
-    public IActionResult Get()
-    {
-    }
 
 
-    [HttpGet("{id}")]
-    public IActionResult Get(string id)
-    {
-    }
-
-
-    [HttpPost]
-    public IActionResult Post([FromBody]Customer obj)
-    {
-    }
-
-
-    [HttpPut("{id}")]
-    public IActionResult Put(string id, [FromBody] Customer obj)
-    {
-    }
-
-    [HttpDelete("{id}")]
-    public IActionResult Delete(string id)
-    {
-    }
-}
-
+dotnet ef migrations add MyBaseMigration  --context appClientContext

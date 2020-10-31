@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "D:\\PRO_NetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj": {}
+    "D:\\proyNetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj": {}
   },
   "projects": {
-    "D:\\PRO_NetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj": {
+    "D:\\proyNetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\PRO_NetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj",
+        "projectUniqueName": "D:\\proyNetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj",
         "projectName": "ClientApi",
-        "projectPath": "D:\\PRO_NetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj",
+        "projectPath": "D:\\proyNetCore\\Microservicio\\ApiGateway\\ClientApi\\ClientApi.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "D:\\PRO_NetCore\\Microservicio\\ApiGateway\\ClientApi\\obj\\",
+        "outputPath": "D:\\proyNetCore\\Microservicio\\ApiGateway\\ClientApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,6 +41,36 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[2.0.0-preview1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

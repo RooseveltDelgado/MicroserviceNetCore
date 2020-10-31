@@ -1,7 +1,7 @@
 {
     "Routes": [
         {
-            "DownstreamPathTemplate": "/api/client",
+            "DownstreamPathTemplate": "/api/security",
             "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                     {
@@ -9,9 +9,9 @@
                         "Port": 7001
                     }
                 ],
-            "UpstreamPathTemplate": "/catalog-api/client"
+            "UpstreamPathTemplate": "/catalog-api/security"
            
-        },
+        },        
         {
             "DownstreamPathTemplate": "/api/orders",
             "DownstreamScheme": "http",
@@ -34,6 +34,18 @@
                     }
                 ],
             "UpstreamPathTemplate": "/catalog-api/product"
+           
+        },
+        {
+            "DownstreamPathTemplate": "/api/client",
+            "DownstreamScheme": "http",
+            "DownstreamHostAndPorts": [
+                    {
+                        "Host": "localhost",
+                        "Port": 7004
+                    }
+                ],
+            "UpstreamPathTemplate": "/catalog-api/client"
            
         }
     ],
